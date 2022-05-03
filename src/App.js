@@ -15,7 +15,7 @@ function App() {
   const [posts, setPosts] = useState([])
 
     useEffect (() => {
-        axios.get('http://localhost:3003/wavez')
+        axios.get('https://zawave-backend.herokuapp.com/wavez')
         .then( res => setPosts (res.data))
     }, [])
 
