@@ -1,12 +1,10 @@
 import {useEffect, useState} from 'react'
-import { getTrendz, getRando, getPokemon, getAnimals } from '../services/zaWave-api'
+import { getRando, getAnimals } from '../services/zaWave-api'
 import '../App.css'
 
 export default function Trendz() {
 
-    const [trendz, setTrendz] = useState([])
 
-    const [loadingTrendz, setLoadingTrendz ] = useState(true)
 
     const [rando, setRando] = useState([])
 
@@ -15,15 +13,6 @@ export default function Trendz() {
     const [randoDescription, setDescription] = useState([])
 
     const [ani, setAni] = useState([])
-
-
-
-    useEffect(() => {
-        // setLoadingTrendz(true)
-        getTrendz()
-        .then(res => setTrendz(res.data.data))
-        setLoadingTrendz(false)
-    }, [loadingTrendz])
 
     useEffect(() => {
         getRando()

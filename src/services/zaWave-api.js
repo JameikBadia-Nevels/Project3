@@ -19,7 +19,6 @@ export const getAnimals = () => {
 export const getPosts = () => {
 
     const response = axios.get(URL)
-    console.log(response)
     return response
 
 }
@@ -27,7 +26,6 @@ export const getPosts = () => {
 export const getPost = (id) => {
 
     const response = axios.get(URL + id)
-    console.log(response)
     return response
 
 }
@@ -35,7 +33,6 @@ export const getPost = (id) => {
 export const getProfile = (id) => {
 
     const response = axios.get(URL + id)
-    console.log(response)
     return response 
 }
 
@@ -65,25 +62,11 @@ export const deletePost = (id) => {
 }
 
 
-export const getTrendz = () => {
-
-    const response = axios.get(TrendzUrl)
-    return response
-
-}
-
 export const getRando = () => {
 
     const response = axios.get(RandoUrl)
-    console.log(response)
     return response 
     
 }
 
-export const getPokemon = () => {
-
-    const response = axios.get(Pokemon)
-    return response
-
-}
 
