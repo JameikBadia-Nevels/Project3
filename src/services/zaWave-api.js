@@ -1,18 +1,12 @@
 import axios from 'axios'
 
-const URL = 'http://localhost:3003/wavez/'
+const URL = 'https://zawave-backend.herokuapp.com/wavez'
 
 //gifs api 
-const TrendzUrl = 'https://api.giphy.com/v1/gifs/trending?api_key=gJPnCRbyzlymPwgMOfgUm8bBMTDXZSqJ&limit=5'
 const RandoUrl = `https://api.giphy.com/v1/gifs/random?api_key=gJPnCRbyzlymPwgMOfgUm8bBMTDXZSqJ`
 
-//Animals and Morty api 
+//Animals api 
 const Animals = 'https://zoo-animal-api.herokuapp.com/animals/rand/10'
-
-
-//pokemon api
-const Pokemon = 'https://pokeapi.co/api/v2/pokemon/'
-
 
 
 export const getAnimals = () => {
