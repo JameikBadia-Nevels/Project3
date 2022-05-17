@@ -20,7 +20,7 @@ export default function Post() {
     };
  
     const dislike = () => {
-    setDCounter(count => count + 1);
+    setDCounter(count => count + 1 );
     }
 
     useEffect(() => {getPost(id)
@@ -82,8 +82,6 @@ export default function Post() {
 
         </div>
 
-
     )
-
 
 }

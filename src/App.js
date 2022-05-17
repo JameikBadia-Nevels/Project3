@@ -12,11 +12,11 @@ import Sign from './components/Signing'
 
 
 function App() {
-  
+
   const [posts, setPosts] = useState([])
 
     useEffect (() => {
-        axios.get('https://zawave-backend.herokuapp.com/wavez')
+        axios.get('https://zawave-backend.herokuapp.com/wavez/')
         .then( res => setPosts (res.data))
     }, [])
 

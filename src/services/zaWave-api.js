@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const URL = 'https://zawave-backend.herokuapp.com/wavez'
+const URL = 'https://zawave-backend.herokuapp.com/wavez/'
 
 //gifs api 
 const RandoUrl = `https://api.giphy.com/v1/gifs/random?api_key=gJPnCRbyzlymPwgMOfgUm8bBMTDXZSqJ`
@@ -41,11 +41,6 @@ export const uploadPost = (add) => {
     const response = axios.post(URL, add)
     return response 
 }
-export const uploadName = (add) => {
-
-    const response = axios.post(add)
-    return response 
-}
 
 
 export const editPost = (id, updatedPost) => {
@@ -60,7 +55,6 @@ export const deletePost = (id) => {
     return response
     
 }
-
 
 export const getRando = () => {
 
